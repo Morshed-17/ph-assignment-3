@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ph Assignment 3</title>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- tailwind and links  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -15,29 +17,110 @@
     <!-- custom tailwindcss  -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'primary-dark': '#121212',
-                'secondary-dark': 'rgba(18, 18, 18, 0.60)',
-                'primary-red': '#F85559',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-dark': '#121212',
+                        'secondary-dark': 'rgba(18, 18, 18, 0.60)',
+                        'primary-red': '#F85559',
+                    }
+                }
             }
-          }
         }
-      </script>
-      <!-- custom css styles -->
-      <style>
+    </script>
+    <!-- custom css styles -->
+    <style>
         .font-lato {
             font-family: 'Lato', sans-serif;
         }
-      </style>
+
+        h1,
+        h2,
+        h3,
+        h4 {}
+
+        p {
+            color: rgba(18, 18, 18, 0.60);
+        }
+        /* @media (max-width:600px) {
+            html {
+                font-size: 70%;
+            }
+        } */
+    </style>
 
 </head>
 
 <body class="font-lato">
+    <!-- header section -->
+    <header class="max-w-screen-2xl px-5 md:px-9 lg:px-12 mx-auto">
 
+        <!-- navbar  -->
+        <nav>
+            <div class="flex justify-between items-center lg:bg-primary-red my-12  rounded-full lg:py-6 lg:px-12">
+                <div class=" hidden lg:flex ">
+                    <!-- pc  -->
+                    <ul class="menu menu-horizontal px-1 text-primary-dark lg:text-white text-[1.1rem]">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="">
+
+                    <a class="flex items-center gap-4 normal-case text-4xl text-primary-dark lg:text-white font-bold "><img
+                            src="./images/logo.png" alt="">Fruit Burst</a>
+                </div>
+
+                <div class="lg:w-1/4">
+                    <!-- Search box -->
+                    
+                    <div class=" bg-white flex justify-between items-center lg:py-3 px-8 rounded-full ">
+                        <input class="hidden lg:inline focus-within:outline-none" type="text" placeholder="Search Here">
+                        <i class="fa-solid fa-magnifying-glass hidden lg:inline "></i>
+                    </div>
+
+                    <div class="dropdown inline">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <!-- mobile -->
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 right-0">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+
+
+    </header>
+
+
+    <!-- main  -->
+
+
+    <main>
+
+    </main>
+    <!-- footer -->
+    <footer>
+
+    </footer>
 </body>
 
 </html>
